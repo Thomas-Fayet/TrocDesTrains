@@ -1,0 +1,354 @@
+body{
+    color: #38454C;
+}
+
+h2{
+    font-family: Quicksand-Light;
+}
+
+h3{
+    font-family: Poppins-Regular;
+    font-size:20px;
+}
+
+h4{
+    font-family:Poppins-Regular;
+    font-size:18px;
+    margin:0;
+}
+
+p{
+    font-family : Poppins-Light;
+    font-size:18px;
+}
+
+/*Responsive images */
+img{
+    max-width: 100%;
+    height:auto;
+}
+
+/* ----- HEADER ----- */
+  
+.header {
+    box-shadow: 1px 1px 10px 7px rgba(0,0,0,.1);
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    display:flex;
+  }
+
+  .header::before{
+    box-shadow: 0px 0px 26px black;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    height:92vh;
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+    background-color: #313171;
+  }
+
+  .header li:first-child{
+    margin-top:5%;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .header #logo {
+    
+  }
+
+  .header .blue-logo{
+      color: #00B0E2;
+  }
+
+  .header .orange-logo{
+      color: #FF6E14;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 25px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 7px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -7px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 2300px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+/* ----- HEADER ----- */
+
+
+/* ----- MAIN ----- */
+
+main{
+    width:80%;
+    margin:0 auto;
+}
+
+hr{
+    border:none;
+    border-top:1px dotted #707070;
+    color:#fff;
+    background-color:#fff;  
+    height:1px;
+}
+
+/* ----- MEILLEURS-PRIX ----- */
+
+.container-two{
+    margin-bottom:80px;
+}
+
+.container-two-wrapper{
+    margin-top:40px;
+}
+
+.container-two-boxes{
+    border-radius:10px;
+    width:75%;
+    margin:0 auto;
+    cursor:pointer;
+}
+
+.box-top{
+    background-color:#00B0E2;
+    border-radius:10px 10px 0 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    height: 80px;
+}
+
+.box-top h2{
+    margin-right:10px;
+}
+
+.box-bottom{
+    align-items:center;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 5px 8px 2px rgba(0,0,0,0.16);
+    height:238px;
+}
+
+.box-bottom h4{
+    text-align: center;
+}
+
+.travel{
+    display:flex;
+}
+
+.city-travel{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.city-travel h4{
+    text-align:left;
+}
+
+/* ----- TRAJETS-POPULAIRES ----- */
+
+.container-three{
+    margin-bottom:80px;
+}
+
+.container-three-wrapper{
+    margin-top:40px;
+}
+
+.container-three-boxes{
+    display:flex;
+    border-radius: 10px;
+    align-items:center;
+    justify-content: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color:white;
+    height:100px;
+}
+
+#paris-marseille{
+    background-image: url('icones/marseille.png');
+    background-position-y: 40%;
+}
+
+#bordeaux-lyon{
+    background-image: url('icones/lyon.jpeg');
+    margin-top:30px;
+}
+
+#lille-rennes{
+    background-image: url('icones/rennes.jpg');
+    background-position-y:35%;
+    margin-top:30px;
+}
+
+.arrow-text{
+    margin-right:25px;
+    margin-left:25px;
+}
+
+
+/* ----- TRAJETS-POPULAIRES ----- */
+
+/* ----- COMMENT-CA-MARCHE ----- */
+
+.container-four{
+
+}
+
+.container-four-wrapper{
+    
+}
+
+.container-four-boxes{
+    
+}
+
+.title-section{
+    margin-bottom:0px;
+}
+
+.container-four-boxes{
+    margin-top:40px;
+}
+
+.container-four-boxes img{
+    width:45%;
+}
+
+/* ----- COMMENT-CA-MARCHE ----- */
+
+/* ----- MAIN ----- */
+
+@media (min-width: 1024px) {
+    .header{
+      display:flex;
+    }
+  
+    .header li {
+      float: left;
+    }
+    .header li a {
+      color:black;
+      padding: 10px 15px;
+    }
+    .header .menu {
+      margin-left:10%;
+      height:auto;
+      float: right;
+      max-height: none;
+      background:white;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  
+    .header .logo{
+      width:15%;
+      margin-left:15%;
+    }
+}
+
+@font-face{
+	font-family: "Poppins-Light";
+	src: url('fonts/Poppins-Light.ttf');
+}
+
+@font-face{
+	font-family: "Poppins-Regular";
+	src: url('fonts/Poppins-Regular.ttf');
+}
+
+@font-face{
+	font-family: "Poppins-Bold";
+	src: url('fonts/Poppins-Bold.ttf');
+}
+
+@font-face{
+	font-family: "Quicksand-Light";
+	src: url('fonts/Quicksand-Light.ttf');
+}

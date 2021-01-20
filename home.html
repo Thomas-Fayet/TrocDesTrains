@@ -3,9 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
     <title>Troc des trains</title>
 </head>
 <body>
-    <h1>Hello world</h1>
+    <header>
+        <h1 id="logo"><span class="blue-logo">Troc des</span> <span class="orange-logo">trains</span></h1>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><button id="sale-nav-button">Vendre un billet</button></li>
+          <li>Mes réservations</li>
+          <li>Mon compte</li>
+        </ul>
+    </header>
+    <main>
+        <section class="container-two">
+            <h2 class="title-section">Les meilleurs prix</h2>
+            <hr>
+            <div class="container-two-wrapper">
+                <div class="container-two-boxes" id="marseille-paris">
+                    <div class="box-top">
+                        <h2>18€</h2>
+                        <h4>(Aller)</h4>
+                    </div>
+                    <div class="box-bottom">
+                        <div class="travel">
+                            <img src="icones/travel.svg" alt="ligne-voyage">
+                            <div class="city-travel">
+                                <h4>Marseille</h4>
+                                <h4>Paris</h4>
+                            </div>
+                        </div>
+                        <h4>20/12/2020 - 1 adulte</h4>
+                    </div>
+                </div>   
+            </div>
+        </section>
+        <section class="container-three">
+            <h2 class="title-section">Les trajets populaires</h2>
+            <hr>
+            <div class="container-three-wrapper">
+                <div class="container-three-boxes" id="paris-marseille">
+                    <p>Paris</p>
+                    <img class="arrow-text" src="icones/right-arrow-white.svg" alt="fleche">
+                    <p>Marseille</p>
+                </div>
+                <div class="container-three-boxes" id="bordeaux-lyon">
+                    <p>Bordeaux</p>
+                    <img class="arrow-text" src="icones/right-arrow-white.svg" alt="fleche">
+                    <p>Lyon</p>
+                </div>
+                <div class="container-three-boxes" id="lille-rennes">
+                    <p>Lille</p>
+                    <img class="arrow-text" src="icones/right-arrow-white.svg" alt="fleche">
+                    <p>Rennes</p>
+                </div>    
+            </div>
+        </section>
+        <section class="container-four">
+            <h2 class="title-section">Comment ça marche ?</h2>
+            <hr>
+            <div class="container-four-wrapper">
+                <div class="container-four-boxes">
+                    <img src="icones/best-seller.svg" alt="meilleur-revente">
+                    <h3>N°1 de la revente en ligne de billets de train</h3>
+                    <p>Troc des Trains est un site gratuit entièrement consacré aux annonces pour 
+                        l'achat sans enchères et la revente, de billets de train à petits prix, ni 
+                        échangeables ni remboursables. Le site contrôle la validité des billets de 
+                        train déposés.
+                    </p>
+                </div>
+                <div class="container-four-boxes">
+                    <img src="icones/ticket-de-parking.svg" alt="ticket-train">
+                    <h3>N°1 de la revente en ligne de billets de train</h3>
+                    <p>Troc des Trains est un site gratuit entièrement consacré aux annonces pour 
+                        l'achat sans enchères et la revente, de billets de train à petits prix, ni 
+                        échangeables ni remboursables. Le site contrôle la validité des billets de 
+                        train déposés.
+                    </p>
+                </div>
+                <div class="container-four-boxes">
+                    <img src="icones/sac-argent.svg" alt="sac-argent">
+                    <h3>N°1 de la revente en ligne de billets de train</h3>
+                    <p>Troc des Trains est un site gratuit entièrement consacré aux annonces pour 
+                        l'achat sans enchères et la revente, de billets de train à petits prix, ni 
+                        échangeables ni remboursables. Le site contrôle la validité des billets de 
+                        train déposés.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
