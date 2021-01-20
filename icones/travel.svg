@@ -1,0 +1,5 @@
+<svg id="Ligne_route" xmlns="http://www.w3.org/2000/svg" width="14.959" height="122.861" viewBox="0 0 14.959 122.861">
+  <line id="Ligne_1" data-name="Ligne 1" y2="92.521" transform="translate(7.5 18.84)" fill="none" stroke="#38454c" stroke-width="2" stroke-dasharray="3"/>
+  <circle id="Ellipse_5" data-name="Ellipse 5" cx="6.5" cy="6.5" r="6.5" transform="translate(1 109.861)" fill="#ff6e14"/>
+  <path id="Tracé_2" data-name="Tracé 2" d="M81.067,0a7.485,7.485,0,0,0-7.744,7.48c0,4.789,4.6,8.264,7.171,13.262a.354.354,0,0,0,.627,0c2.33-4.5,6.313-7.513,7.051-11.845A7.593,7.593,0,0,0,81.067,0Zm-.259,11.4a3.92,3.92,0,1,1,3.921-3.92A3.921,3.921,0,0,1,80.808,11.405Z" transform="translate(-73.323 0)" fill="#ff6e14"/>
+</svg>
