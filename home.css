@@ -458,6 +458,8 @@ input[type="submit"]{
   height:65px;
   display:block;
   margin:0 auto;
+  font-family:Poppins-Regular;
+  font-size:18px;
 }
 
 /* ----- FOOTER ----- */
