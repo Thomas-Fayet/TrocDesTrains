@@ -8,16 +8,118 @@
 </head>
 <body>
     <header>
-        <h1 id="logo"><span class="blue-logo">Troc des</span> <span class="orange-logo">trains</span></h1>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-          <li><button id="sale-nav-button">Vendre un billet</button></li>
-          <li>Mes réservations</li>
-          <li>Mon compte</li>
-        </ul>
+        <nav>
+            <h1 id="logo"><span class="blue-logo">Troc des</span> <span class="orange-logo">trains</span></h1>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+            <li><button id="sale-nav-button">Vendre un billet</button></li>
+            <li>Mes réservations</li>
+            <li>Mon compte</li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <h1>Achetez ou revendez vos billets de train à prix réduit.</h1>
+        <section class="container-one">
+            <h2>Rechercher un billet</h2>
+            <form>
+                <div class="select-travel-radios">
+                    <input type="radio" value="aller" checked="checked" name="radio">
+                    <label for="aller">Aller simple</label>
+                    <input type="radio" class="ex" value="aller" name="radio">
+                    <label for="aller-retour">Aller - Retour</label>
+                </div>
+                <div class="search">
+                    <div class="search-row">
+                        <label for="departureStation">Gare de départ</label>
+                        <input type="text" name="departureStation" class="search-fields">
+                    </div>
+                    <div class="search-row">
+                        <label for="arrivalStation">Gare d'arrivée</label>
+                        <input type="text" name="arrivalStation" class="search-fields">
+                    </div>
+                    <div class="search-row">
+                        <label for="travelDate">Date de voyage</label>
+                        <input type="date" name="travelDate" class="search-fields" min="2021-01-01" max="2021-12-31">
+                    </div>
+                    <div class="search-row travel-back">
+                        <label for="travelDateRetour">Date du retour</label>
+                        <input type="date" name="travelDateRetour" class="search-fields" min="2021-01-01" max="2021-12-31">
+                    </div>
+                    <div class="search-row">
+                        <label for="travelDate">Horaires</label>
+                        <div class="setHours">
+                            <label for="from">de</label>
+                            <select name="from" class="search-fields">
+                                <option value="00" selected>00h</option>
+                                <option value="01">01h</option>
+                                <option value="02">02h</option>
+                                <option value="03">03h</option>
+                                <option value="04">04h</option>
+                                <option value="05">05h</option>
+                                <option value="06">06h</option>
+                                <option value="07">07h</option>
+                                <option value="08">08h</option>
+                                <option value="09">09h</option>
+                                <option value="10">10h</option>
+                                <option value="11">11h</option>
+                                <option value="12">12h</option>
+                                <option value="13">13h</option>
+                                <option value="14">14h</option>
+                                <option value="15">15h</option>
+                                <option value="16">16h</option>
+                                <option value="17">17h</option>
+                                <option value="18">18h</option>
+                                <option value="19">19h</option>
+                                <option value="20">20h</option>
+                                <option value="21">21h</option>
+                                <option value="22">22h</option>
+                                <option value="23">23h</option>
+                            </select>
+                            <label for="to">à</label>
+                            <select name="to" class="search-fields">
+                                <option value="00" selected>00h</option>
+                                <option value="01">01h</option>
+                                <option value="02">02h</option>
+                                <option value="03">03h</option>
+                                <option value="04">04h</option>
+                                <option value="05">05h</option>
+                                <option value="06">06h</option>
+                                <option value="07">07h</option>
+                                <option value="08">08h</option>
+                                <option value="09">09h</option>
+                                <option value="10">10h</option>
+                                <option value="11">11h</option>
+                                <option value="12">12h</option>
+                                <option value="13">13h</option>
+                                <option value="14">14h</option>
+                                <option value="15">15h</option>
+                                <option value="16">16h</option>
+                                <option value="17">17h</option>
+                                <option value="18">18h</option>
+                                <option value="19">19h</option>
+                                <option value="20">20h</option>
+                                <option value="21">21h</option>
+                                <option value="22">22h</option>
+                                <option value="23">23h</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="search-row">
+                        <label for="passagers">Passagers</label>
+                        <select name="arrivalStation" class="search-fields">
+                            <option value="00" selected>1 adulte</option>
+                            <option value="01">2 adultes</option>
+                            <option value="02">2 adultes - 1 enfant</option>
+                            <option value="03">2 adultes - 2 enfants</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Valider">
+                </div>
+            </form>
+        </section>
+
         <section class="container-two">
             <h2 class="title-section">Les meilleurs prix</h2>
             <hr>
@@ -40,6 +142,7 @@
                 </div>   
             </div>
         </section>
+
         <section class="container-three">
             <h2 class="title-section">Les trajets populaires</h2>
             <hr>
@@ -66,7 +169,7 @@
             <hr>
             <div class="container-four-wrapper">
                 <div class="container-four-boxes">
-                    <img src="icones/best-seller.svg" alt="meilleur-revente">
+                    <img src="icones/best-seller.svg" alt="meilleur-revente" class="illustrations sales">
                     <h3>N°1 de la revente en ligne de billets de train</h3>
                     <p>Troc des Trains est un site gratuit entièrement consacré aux annonces pour 
                         l'achat sans enchères et la revente, de billets de train à petits prix, ni 
@@ -75,7 +178,7 @@
                     </p>
                 </div>
                 <div class="container-four-boxes">
-                    <img src="icones/ticket-de-parking.svg" alt="ticket-train">
+                    <img src="icones/ticket-de-parking.svg" alt="ticket-train" class="illustrations ticket">
                     <h3>N°1 de la revente en ligne de billets de train</h3>
                     <p>Troc des Trains est un site gratuit entièrement consacré aux annonces pour 
                         l'achat sans enchères et la revente, de billets de train à petits prix, ni 
@@ -84,7 +187,7 @@
                     </p>
                 </div>
                 <div class="container-four-boxes">
-                    <img src="icones/sac-argent.svg" alt="sac-argent">
+                    <img src="icones/sac-argent.svg" alt="sac-argent" class="illustrations money">
                     <h3>N°1 de la revente en ligne de billets de train</h3>
                     <p>Troc des Trains est un site gratuit entièrement consacré aux annonces pour 
                         l'achat sans enchères et la revente, de billets de train à petits prix, ni 
@@ -94,6 +197,79 @@
                 </div>
             </div>
         </section>
+        <section class="container-five">
+            <h2 class="title-section">Les avis des utilisateurs</h2>
+            <hr>
+            <div class="container-five-wrapper">
+                <div class="container-five-boxes">
+                    <div class="top-box">
+                        <img class="icon-user" src="icones/forme-de-gros-plan-noir-utilisateur.svg" alt="icone-homme">
+                        <h5>Calvin.Ly12</h5>
+                        <img src="icones/4stars.svg">
+                    </div>
+                    <p>Inscrit il y’a quelque jours, 2 billets revendus ... j’ai eu aussi l’occasion 
+                        d’écrire à l’assistance qui a été très réactive.
+                    </p>
+                </div>
+                <div class="container-five-boxes">
+                    <div class="top-box">
+                        <img class="icon-user" src="icones/forme-de-gros-plan-noir-utilisateur.svg" alt="icone-homme">
+                        <h5>Rouan.Lapo41</h5>
+                        <img src="icones/4stars.svg">
+                    </div>
+                    <p>Très simple à utiliser. Bravo !</p>
+                </div>
+                <div class="container-five-boxes">
+                    <div class="top-box">
+                        <img class="icon-user" src="icones/forme-de-gros-plan-noir-utilisateur.svg" alt="icone-homme">
+                        <h5>Luca.Rlr00</h5>
+                        <img src="icones/5stars.svg">
+                    </div>
+                    <p>Perfect !!</p>
+                </div>
+            </div>
+            <button class="button-view-all-ratings"><h4>Voir plus d'avis</h4></button>
+        </section>
     </main>
+    <footer>
+        <section class="footer-container">
+            <div class="footer-block">
+                <h5>A propos de Troc des Trains</h5>
+                <ul class="footer-list">
+                    <li>Qui sommes-nous ?</li>
+                    <li>Nous rejoindre</li>
+                </ul>
+            </div>
+            <div class="footer-block">
+                <h5>Informations légales</h5>
+                <ul class="footer-list">
+                    <li>Conditions générales d'utilisation</li>
+                    <li>Conditions générales de vente</li>
+                    <li>Vie privée / cookies</li>
+                </ul>
+            </div>
+            <div class="footer-block">
+                <h5>Des questions ?</h5>
+                <ul class="footer-list">
+                    <li>Aide</li>
+                    <li>Le service de paiement sécurisé</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-block">
+                <h5>Suivez-nous sur les réseaux :</h5>
+                <div class="social-medias-container">
+                    <img class="social-medias" src="icones/facebook.svg" alt="facebook-logo">
+                    <img class="social-medias" src="icones/twitter.svg" alt="twitter-logo">
+                    <img class="social-medias" src="icones/instagram.svg" alt="instagram-logo">
+                </div>
+            </div>
+            <div class="footer-block">
+                <p>© Troc des trains 2020</p>
+                <p>-</p>
+                <p>Tous droits réservés.</p>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
