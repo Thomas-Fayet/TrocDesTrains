@@ -7,30 +7,31 @@
     <title>Troc des trains</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="icones/logo.svg" alt="logo-TrocDesTrains">
+    <header class="header">
+        <nav class="fixed-nav-bar">
+            <img src="icones/logo.svg" alt="logo-TrocDesTrains" class="nav-logo">
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
-            <li><button id="sale-nav-button">Vendre un billet</button></li>
-            <li>Mes réservations</li>
-            <li>Mon compte</li>
+                <li><button class="sale-nav-button"><img src="icones/vendre-un-billet.svg" alt="icone-vendre" class="nav-icon">Vendre un billet</button></li>
+                <li class="nav-link"><img src="icones/booking-list.svg" alt="icone-réservations" class="nav-icon">Mes réservations</li>
+                <li class="nav-link"><img src="icones/forme-de-gros-plan-noir-utilisateur.svg" alt="icone-compte" class="nav-icon">Mon compte</li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Achetez ou revendez vos billets de train à prix réduit.</h1>
+        <img src="icones/train.jpg" alt="image-voyageurs" class="home-picture">
+        <h1 class="top-title">Achetez ou revendez vos billets de train à prix réduit.</h1>
         <section class="container-one">
             <h2>Rechercher un billet</h2>
-            <form>
+            <form class="form-container">
                 <div class="select-travel-radios">
                     <input type="radio" value="aller" checked="checked" name="radio">
                     <label>Aller simple</label>
                     <input type="radio" class="ex" value="aller" name="radio">
                     <label>Aller - Retour</label>
                 </div>
-                <div class="search">
+                <section class="form-container-flex">
                     <div class="search-row">
                         <label>Gare de départ</label>
                         <input type="text" name="departureStation" class="search-fields">
@@ -115,8 +116,8 @@
                             <option value="03">2 adultes - 2 enfants</option>
                         </select>
                     </div>
-                    <input type="submit" value="Valider">
-                </div>
+                </section>
+                <input class="submit-form" type="submit" value="Valider">
             </form>
         </section>
 
@@ -124,9 +125,9 @@
             <h2 class="title-section">Les meilleurs prix</h2>
             <hr>
             <div class="container-two-wrapper">
-                <div class="container-two-boxes" id="marseille-paris">
+                <div class="container-two-boxes">
                     <div class="box-top">
-                        <h2>18€</h2>
+                        <h2>21€</h2>
                         <h4>(Aller)</h4>
                     </div>
                     <div class="box-bottom">
@@ -137,7 +138,39 @@
                                 <h4>Paris</h4>
                             </div>
                         </div>
-                        <h4>20/12/2020 - 1 adulte</h4>
+                        <h4>08/01/2021 - 1 adulte</h4>
+                    </div>
+                </div>
+                <div class="container-two-boxes">
+                    <div class="box-top">
+                        <h2>15€</h2>
+                        <h4>(Aller)</h4>
+                    </div>
+                    <div class="box-bottom">
+                        <div class="travel">
+                            <img src="icones/travel.svg" alt="ligne-voyage">
+                            <div class="city-travel">
+                                <h4>Lyon</h4>
+                                <h4>Rennes</h4>
+                            </div>
+                        </div>
+                        <h4>10/01/2021 - 1 adulte</h4>
+                    </div>
+                </div>
+                <div class="container-two-boxes">
+                    <div class="box-top">
+                        <h2>32€</h2>
+                        <h4>(Aller-Retour)</h4>
+                    </div>
+                    <div class="box-bottom">
+                        <div class="travel">
+                            <img src="icones/travel.svg" alt="ligne-voyage">
+                            <div class="city-travel">
+                                <h4>Lille</h4>
+                                <h4>Rennes</h4>
+                            </div>
+                        </div>
+                        <h4>15/01/2021 - 1 adulte</h4>
                     </div>
                 </div>   
             </div>
@@ -147,17 +180,17 @@
             <h2 class="title-section">Les trajets populaires</h2>
             <hr>
             <div class="container-three-wrapper">
-                <div class="container-three-boxes" id="paris-marseille">
+                <div class="container-three-boxes paris-marseille">
                     <p>Paris</p>
                     <img class="arrow-text" src="icones/right-arrow-white.svg" alt="fleche">
                     <p>Marseille</p>
                 </div>
-                <div class="container-three-boxes" id="bordeaux-lyon">
+                <div class="container-three-boxes bordeaux-lyon">
                     <p>Bordeaux</p>
                     <img class="arrow-text" src="icones/right-arrow-white.svg" alt="fleche">
                     <p>Lyon</p>
                 </div>
-                <div class="container-three-boxes" id="lille-rennes">
+                <div class="container-three-boxes lille-rennes">
                     <p>Lille</p>
                     <img class="arrow-text" src="icones/right-arrow-white.svg" alt="fleche">
                     <p>Rennes</p>
@@ -179,20 +212,16 @@
                 </div>
                 <div class="container-four-boxes">
                     <img src="icones/ticket-de-parking.svg" alt="ticket-train" class="illustrations ticket">
-                    <h3>N°1 de la revente en ligne de billets de train</h3>
-                    <p>Troc des Trains est un site gratuit entièrement consacré aux annonces pour 
-                        l'achat sans enchères et la revente, de billets de train à petits prix, ni 
-                        échangeables ni remboursables. Le site contrôle la validité des billets de 
-                        train déposés.
+                    <h3>Achat de billets de train simple et rapide</h3>
+                    <p>Choisissez le billet qu'il vous faut. Payez le billet directement sur le site grâce à notre 
+                        paiement sécurisé. Téléchargez le billet instantanément.
                     </p>
                 </div>
                 <div class="container-four-boxes">
                     <img src="icones/sac-argent.svg" alt="sac-argent" class="illustrations money">
-                    <h3>N°1 de la revente en ligne de billets de train</h3>
-                    <p>Troc des Trains est un site gratuit entièrement consacré aux annonces pour 
-                        l'achat sans enchères et la revente, de billets de train à petits prix, ni 
-                        échangeables ni remboursables. Le site contrôle la validité des billets de 
-                        train déposés.
+                    <h3>Revendez vos billets de train en sécurité</h3>
+                    <p>Déposez votre billet sur le site en toute simplicité avec un PDF.
+                        Les acheteurs ne recevront votre billet qu'une fois leur paiement reçu.
                     </p>
                 </div>
             </div>
@@ -228,40 +257,42 @@
                     <p>Perfect !!</p>
                 </div>
             </div>
-            <button class="button-view-all-ratings"><h4>Voir plus d'avis</h4></button>
+            <button class="button-view-all-ratings">Voir plus d'avis</button>
         </section>
     </main>
     <footer>
         <section class="footer-container">
-            <div class="footer-block">
-                <h5>A propos de Troc des Trains</h5>
-                <ul class="footer-list">
-                    <li>Qui sommes-nous ?</li>
-                    <li>Nous rejoindre</li>
-                </ul>
-            </div>
-            <div class="footer-block">
-                <h5>Informations légales</h5>
-                <ul class="footer-list">
-                    <li>Conditions générales d'utilisation</li>
-                    <li>Conditions générales de vente</li>
-                    <li>Vie privée / cookies</li>
-                </ul>
-            </div>
-            <div class="footer-block">
-                <h5>Des questions ?</h5>
-                <ul class="footer-list">
-                    <li>Aide</li>
-                    <li>Le service de paiement sécurisé</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div class="footer-block">
-                <h5>Suivez-nous sur les réseaux :</h5>
-                <div class="social-medias-container">
-                    <img class="social-medias" src="icones/facebook.svg" alt="facebook-logo">
-                    <img class="social-medias" src="icones/twitter.svg" alt="twitter-logo">
-                    <img class="social-medias" src="icones/instagram.svg" alt="instagram-logo">
+            <div class="footer-flex">
+                <div class="footer-block">
+                    <h5>A propos de Troc des Trains</h5>
+                    <ul class="footer-list">
+                        <li>Qui sommes-nous ?</li>
+                        <li>Nous rejoindre</li>
+                    </ul>
+                </div>
+                <div class="footer-block">
+                    <h5>Informations légales</h5>
+                    <ul class="footer-list">
+                        <li>Conditions générales d'utilisation</li>
+                        <li>Conditions générales de vente</li>
+                        <li>Vie privée / cookies</li>
+                    </ul>
+                </div>
+                <div class="footer-block">
+                    <h5>Des questions ?</h5>
+                    <ul class="footer-list">
+                        <li>Aide</li>
+                        <li>Le service de paiement sécurisé</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="footer-block">
+                    <h5>Suivez-nous sur les réseaux :</h5>
+                    <div class="social-medias-container">
+                        <img class="social-medias" src="icones/facebook.svg" alt="facebook-logo">
+                        <img class="social-medias" src="icones/twitter.svg" alt="twitter-logo">
+                        <img class="social-medias" src="icones/instagram.svg" alt="instagram-logo">
+                    </div>
                 </div>
             </div>
             <div class="footer-block">
