@@ -21,8 +21,8 @@
     </header>
     <main>
         <img 
-        src="icones/image-train.jpg"
-        srcset="icones/image-train.jpg 768w, icones/image-train.jpg 1024w, icones/image-train.jpg 1440w" 
+        src="icones/image-train.webp"
+        srcset="icones/image-train.webp 768w, icones/image-train.webp 1024w, icones/image-train.webp 1440w" 
         alt="image-voyageurs" 
         class="home-picture">
         <h1 class="top-title">Achetez ou revendez vos billets de train à prix réduit.</h1>
@@ -30,15 +30,15 @@
             <h2 class="title-container-one">Rechercher un billet</h2>
             <form class="form-container">
                 <div class="select-travel-radios">
-                    <input type="radio" value="aller" checked="checked" name="radio">
-                    <label>Aller simple</label>
-                    <input type="radio" class="ex" value="aller" name="radio">
-                    <label>Aller - Retour</label>
+                    <input type="radio" value="aller" checked="checked" id="radio-go" name="radio">
+                    <label for="radio-go">Aller simple</label>
+                    <input type="radio" class="ex" value="aller" id="radio-go-from" name="radio">
+                    <label for="radio-go-from">Aller - Retour</label>
                 </div>
                 <section class="form-container-flex">
                     <div class="search-row row-one">
-                        <label>Gare de départ</label>
-                        <select name="departureStation" class="select-fields">
+                        <label for="departure-station">Gare de départ</label>
+                        <select id="departure-station" name="departureStation" class="select-fields">
                             <option value="00" selected>Choisir la gare</option>
                             <option value="01">Paris Montparnasse</option>
                             <option value="02">Marseille Saint-Charles</option>
@@ -48,8 +48,8 @@
                         </select>
                     </div>
                     <div class="search-row row-two">
-                        <label>Gare d'arrivée</label>
-                        <select name="departureStation" class="select-fields">
+                        <label for="arrival-station">Gare d'arrivée</label>
+                        <select id="arrival-station" name="arrivalStation" class="select-fields">
                             <option value="00" selected>Choisir la gare</option>
                             <option value="01">Paris Montparnasse</option>
                             <option value="02">Marseille Saint-Charles</option>
@@ -59,14 +59,14 @@
                         </select>
                     </div>
                     <div class="search-row row-three">
-                        <label>Date de voyage</label>
-                        <input type="date" name="travelDate" class="select-fields search-fields" min="2021-01-01" max="2021-12-31">
+                        <label for="travel-date">Date de voyage</label>
+                        <input type="date" name="travelDate" id="travel-date" class="select-fields search-fields" min="2021-01-01" max="2021-12-31">
                     </div>
                     <div class="search-row row-four">
-                        <label>Horaires</label>
+                        <label for="hours-travel-from">Horaires</label>
                         <div class="set-hours">
-                            <label>de</label>
-                            <select name="from" class="select-fields search-fields">
+                            <p class="hours-text">de</p>
+                            <select name="from" id="hours-travel-from" class="select-fields search-fields">
                                 <option value="00" selected>00h</option>
                                 <option value="01">01h</option>
                                 <option value="02">02h</option>
@@ -92,8 +92,8 @@
                                 <option value="22">22h</option>
                                 <option value="23">23h</option>
                             </select>
-                            <label>à</label>
-                            <select name="to" class="select-fields search-fields">
+                            <label for="hours-travel-to">à</label>
+                            <select name="to" id="hours-travel-to" class="select-fields search-fields">
                                 <option value="00" selected>00h</option>
                                 <option value="01">01h</option>
                                 <option value="02">02h</option>
@@ -122,8 +122,8 @@
                         </div>
                     </div>
                     <div class="search-row row-five">
-                        <label>Passagers</label>
-                        <select name="arrivalStation" class="select-fields">
+                        <label for="passagers">Passagers</label>
+                        <select id="passagers" name="passagers" class="select-fields">
                             <option value="00" selected>1 adulte</option>
                             <option value="01">2 adultes</option>
                             <option value="02">2 adultes - 1 enfant</option>
