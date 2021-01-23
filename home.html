@@ -23,7 +23,7 @@
         <img src="icones/train.jpg" alt="image-voyageurs" class="home-picture">
         <h1 class="top-title">Achetez ou revendez vos billets de train à prix réduit.</h1>
         <section class="container-one">
-            <h2>Rechercher un billet</h2>
+            <h2 class="title-container-one">Rechercher un billet</h2>
             <form class="form-container">
                 <div class="select-travel-radios">
                     <input type="radio" value="aller" checked="checked" name="radio">
@@ -32,27 +32,37 @@
                     <label>Aller - Retour</label>
                 </div>
                 <section class="form-container-flex">
-                    <div class="search-row">
+                    <div class="search-row row-one">
                         <label>Gare de départ</label>
-                        <input type="text" name="departureStation" class="search-fields">
+                        <select name="departureStation" class="select-fields">
+                            <option value="00" selected>Choisir la gare</option>
+                            <option value="01">Paris Montparnasse</option>
+                            <option value="02">Marseille Saint-Charles</option>
+                            <option value="03">Gare de Rennes</option>
+                            <option value="04">Garre de Lille</option>
+                            <option value="05">Gare de Bordeaux</option>
+                        </select>
                     </div>
-                    <div class="search-row">
+                    <div class="search-row row-two">
                         <label>Gare d'arrivée</label>
-                        <input type="text" name="arrivalStation" class="search-fields">
+                        <select name="departureStation" class="select-fields">
+                            <option value="00" selected>Choisir la gare</option>
+                            <option value="01">Paris Montparnasse</option>
+                            <option value="02">Marseille Saint-Charles</option>
+                            <option value="03">Gare de Rennes</option>
+                            <option value="04">Garre de Lille</option>
+                            <option value="05">Gare de Bordeaux</option>
+                        </select>
                     </div>
-                    <div class="search-row">
+                    <div class="search-row row-three">
                         <label>Date de voyage</label>
-                        <input type="date" name="travelDate" class="search-fields" min="2021-01-01" max="2021-12-31">
+                        <input type="date" name="travelDate" class="select-fields search-fields" min="2021-01-01" max="2021-12-31">
                     </div>
-                    <div class="search-row travel-back">
-                        <label>Date du retour</label>
-                        <input type="date" name="travelDateRetour" class="search-fields" min="2021-01-01" max="2021-12-31">
-                    </div>
-                    <div class="search-row">
+                    <div class="search-row row-four">
                         <label>Horaires</label>
-                        <div class="setHours">
+                        <div class="set-hours">
                             <label>de</label>
-                            <select name="from" class="search-fields">
+                            <select name="from" class="select-fields search-fields">
                                 <option value="00" selected>00h</option>
                                 <option value="01">01h</option>
                                 <option value="02">02h</option>
@@ -79,7 +89,7 @@
                                 <option value="23">23h</option>
                             </select>
                             <label>à</label>
-                            <select name="to" class="search-fields">
+                            <select name="to" class="select-fields search-fields">
                                 <option value="00" selected>00h</option>
                                 <option value="01">01h</option>
                                 <option value="02">02h</option>
@@ -107,9 +117,9 @@
                             </select>
                         </div>
                     </div>
-                    <div class="search-row">
+                    <div class="search-row row-five">
                         <label>Passagers</label>
-                        <select name="arrivalStation" class="search-fields">
+                        <select name="arrivalStation" class="select-fields">
                             <option value="00" selected>1 adulte</option>
                             <option value="01">2 adultes</option>
                             <option value="02">2 adultes - 1 enfant</option>
@@ -204,7 +214,7 @@
                 <div class="container-four-boxes">
                     <img src="icones/best-seller.svg" alt="meilleur-revente" class="illustrations sales">
                     <h3>N°1 de la revente en ligne de billets de train</h3>
-                    <p>Troc des Trains est un site gratuit entièrement consacré aux annonces pour 
+                    <p>Troc des Trains est un site entièrement consacré aux annonces pour 
                         l'achat sans enchères et la revente, de billets de train à petits prix, ni 
                         échangeables ni remboursables. Le site contrôle la validité des billets de 
                         train déposés.
