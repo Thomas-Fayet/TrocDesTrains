@@ -111,16 +111,17 @@ img{
   }
   
   .fixed-nav-bar{
-    width: 80%;
-    height:100%;
-    display:flex;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
     align-items: center;
-    justify-content: space-between;
-    margin:0 auto;
   }
 
   .nav-logo{
-    width:175px;
+    grid-column:2/3;
+    justify-self: center;
   }
 
   .sale-nav-button{
@@ -152,12 +153,10 @@ img{
   /* menu icon */
   
   .header .menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    float: right;
+    grid-column: 3/4;
+    justify-self: end;
+    padding-right:20px;
     padding: 28px 20px;
-    position: relative;
-    user-select: none;
   }
   
   .header .menu-icon .navicon {
@@ -335,7 +334,7 @@ hr{
 	  text-align: center;
 }
 
-.box-top{
+.price-travel{
     background-color:#00B0E2;
     border-radius:10px 10px 0 0;
     display:flex;
@@ -345,18 +344,18 @@ hr{
     height: 80px;
 }
 
-.box-top h2{
+.price-travel h2{
     margin-right:10px;
 }
 
-.box-bottom{
+.travel-info{
     align-items:center;
     border-radius: 0 0 10px 10px;
     box-shadow: 0px 5px 8px 2px rgba(0,0,0,0.16);
     height:238px;
 }
 
-.box-bottom h4{
+.travel-info h4{
     text-align: center;
 }
 
@@ -496,16 +495,16 @@ hr{
   box-shadow: 0px 3px 6px 2px rgba(0,0,0,0.16);
 }
 
-.top-box{
+.box-user-info{
   display:flex;
   padding:0 0 0px 25px;
 }
 
-.top-box .icon-user{
+.box-user-info .icon-user{
   margin-right:10px;
 }
 
-.top-box h5{
+.box-user-info h5{
   margin-right:10px;
 }
 
