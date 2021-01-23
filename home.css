@@ -123,6 +123,7 @@ img{
     width:175px;
     grid-column:2/3;
     justify-self: center;
+    cursor:pointer;
   }
 
   .sale-nav-button{
@@ -149,6 +150,10 @@ img{
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
+  }
+
+  .menu li{
+    cursor:pointer;
   }
   
   /* menu icon */
@@ -546,6 +551,7 @@ hr{
   margin:0 auto;
   font-family:Poppins-Regular;
   font-size:18px;
+  cursor:pointer;
 }
 
 /* ----- FOOTER ----- */
@@ -573,6 +579,7 @@ hr{
   font-family: Poppins-light;
   margin-bottom:20px;
   font-size:12px;
+  cursor:pointer;
 }
 
 .footer-list li:last-child{
@@ -586,6 +593,7 @@ hr{
 
 .social-medias{
   margin-right:55px;
+  cursor:pointer;
 }
 
 .social-medias:last-child{
