@@ -155,6 +155,10 @@ img{
   .menu li{
     cursor:pointer;
   }
+
+  .menu li:hover{
+    color:#FF6E14;
+  }
   
   /* menu icon */
   
