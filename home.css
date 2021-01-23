@@ -193,27 +193,6 @@ img{
   .header .menu-btn {
     display: none;
   }
-  
-  .header .menu-btn:checked ~ .menu {
-    max-height: 2300px;
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
-  }
 
 /* ----- HEADER ----- */
 
@@ -247,6 +226,8 @@ hr{
 .container-one{
   margin-top:45px;
   margin-bottom:80px;
+  width: 288px;
+  margin:30px auto 125px auto;
 }
 
 .travel-back{
